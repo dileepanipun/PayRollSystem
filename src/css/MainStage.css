@@ -1,0 +1,13 @@
+
+
+.sliderButtons{
+    -fx-background-color: #602113;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+    -fx-cursor: hand;
+}
+
+.sliderButtons:hover{
+    -fx-background-color: #BF4126;
+}
+

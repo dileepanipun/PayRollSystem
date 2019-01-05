@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainStage">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #602113;">
+         <children>
+            <JFXButton contentDisplay="TOP" disable="true" prefHeight="149.0" prefWidth="200.0" text="Current User" textFill="#e4adad">
+               <graphic>
+                  <ImageView disable="true" fitHeight="80.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assest/person-icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" onAction="#employee_onaction" prefHeight="50.0" prefWidth="200.0" styleClass="sliderButtons" stylesheets="@../css/MainStage.css" text="Employee" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="110.0" onAction="#desgination" prefHeight="50.0" prefWidth="200.0" styleClass="sliderButtons" stylesheets="@../css/MainStage.css" text="Designation" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="309.0" onAction="#salary" prefHeight="50.0" prefWidth="200.0" styleClass="sliderButtons" stylesheets="@../css/MainStage.css" text="Salary" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="160.0" onAction="#settings" prefHeight="50.0" prefWidth="200.0" styleClass="sliderButtons" stylesheets="@../css/MainStage.css" text="Settings" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" layoutX="10.0" layoutY="260.0" onAction="#logout_onaction" prefHeight="50.0" prefWidth="200.0" styleClass="sliderButtons" stylesheets="@../css/MainStage.css" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Label layoutX="200.0" prefHeight="50.0" prefWidth="700.0" style="-fx-background-color: #9F3620;" text="Pay-roll System 2.0" textFill="#ebaaaa">
+         <font>
+            <Font name="Arial Narrow Bold" size="18.0" />
+         </font>
+         <padding>
+            <Insets left="30.0" />
+         </padding>
+      </Label>
+      <AnchorPane fx:id="panelLoader" layoutX="200.0" layoutY="50.0" prefHeight="550.0" prefWidth="700.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+
+.mainButtons{
+    -fx-cursor: hand;
+}
+
+.save{
+    -fx-background-color: rgba(46, 204, 113, 0.51);
+}
+
+.update{
+    -fx-background-color: rgba(243, 156, 18, 0.51);
+}
+
+.delete{
+    -fx-background-color: rgba(231, 76, 60, 0.5);
+}
+
+.clear{
+    -fx-background-color: rgba(52, 152, 219, 0.51);
+}
+
+.save:hover{
+     -fx-background-color: #2ecc71;
+ }
+
+.update:hover{
+    -fx-background-color: #f39c12;
+}
+
+.delete:hover{
+    -fx-background-color: #e74c3c;
+}
+
+.clear:hover{
+    -fx-background-color: #3498db;
+}
